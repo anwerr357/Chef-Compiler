@@ -1,0 +1,17 @@
+RECETTE GâteauChocolat
+
+INGRÉDIENTS
+  200 g chocolat
+  100 g beurre
+  3 œufs
+  100 g sucre
+  50 g farine
+
+ÉTAPES
+  fondre chocolat, beurre
+  ajouter sucre, œufs
+  mélanger 2 min
+  ajouter farine
+  cuire 25 min à 180°C
+
+

@@ -1,0 +1,146 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    NEWLINE
+
+Grammar
+
+Rule 0     S' -> recette
+Rule 1     recette -> RECETTE section_ingredients section_etapes
+Rule 2     section_ingredients -> SECTION ingredients
+Rule 3     ingredients -> TEXT ingredients
+Rule 4     ingredients -> TEXT
+Rule 5     section_etapes -> SECTION etapes
+Rule 6     etapes -> TEXT etapes
+Rule 7     etapes -> TEXT
+
+Terminals, with rules where they appear
+
+NEWLINE              : 
+RECETTE              : 1
+SECTION              : 2 5
+TEXT                 : 3 4 6 7
+error                : 
+
+Nonterminals, with rules where they appear
+
+etapes               : 5 6
+ingredients          : 2 3
+recette              : 0
+section_etapes       : 1
+section_ingredients  : 1
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . recette
+    (1) recette -> . RECETTE section_ingredients section_etapes
+
+    RECETTE         shift and go to state 2
+
+    recette                        shift and go to state 1
+
+state 1
+
+    (0) S' -> recette .
+
+
+
+state 2
+
+    (1) recette -> RECETTE . section_ingredients section_etapes
+    (2) section_ingredients -> . SECTION ingredients
+
+    SECTION         shift and go to state 4
+
+    section_ingredients            shift and go to state 3
+
+state 3
+
+    (1) recette -> RECETTE section_ingredients . section_etapes
+    (5) section_etapes -> . SECTION etapes
+
+    SECTION         shift and go to state 6
+
+    section_etapes                 shift and go to state 5
+
+state 4
+
+    (2) section_ingredients -> SECTION . ingredients
+    (3) ingredients -> . TEXT ingredients
+    (4) ingredients -> . TEXT
+
+    TEXT            shift and go to state 8
+
+    ingredients                    shift and go to state 7
+
+state 5
+
+    (1) recette -> RECETTE section_ingredients section_etapes .
+
+    $end            reduce using rule 1 (recette -> RECETTE section_ingredients section_etapes .)
+
+
+state 6
+
+    (5) section_etapes -> SECTION . etapes
+    (6) etapes -> . TEXT etapes
+    (7) etapes -> . TEXT
+
+    TEXT            shift and go to state 10
+
+    etapes                         shift and go to state 9
+
+state 7
+
+    (2) section_ingredients -> SECTION ingredients .
+
+    SECTION         reduce using rule 2 (section_ingredients -> SECTION ingredients .)
+
+
+state 8
+
+    (3) ingredients -> TEXT . ingredients
+    (4) ingredients -> TEXT .
+    (3) ingredients -> . TEXT ingredients
+    (4) ingredients -> . TEXT
+
+    SECTION         reduce using rule 4 (ingredients -> TEXT .)
+    TEXT            shift and go to state 8
+
+    ingredients                    shift and go to state 11
+
+state 9
+
+    (5) section_etapes -> SECTION etapes .
+
+    $end            reduce using rule 5 (section_etapes -> SECTION etapes .)
+
+
+state 10
+
+    (6) etapes -> TEXT . etapes
+    (7) etapes -> TEXT .
+    (6) etapes -> . TEXT etapes
+    (7) etapes -> . TEXT
+
+    $end            reduce using rule 7 (etapes -> TEXT .)
+    TEXT            shift and go to state 10
+
+    etapes                         shift and go to state 12
+
+state 11
+
+    (3) ingredients -> TEXT ingredients .
+
+    SECTION         reduce using rule 3 (ingredients -> TEXT ingredients .)
+
+
+state 12
+
+    (6) etapes -> TEXT etapes .
+
+    $end            reduce using rule 6 (etapes -> TEXT etapes .)
+
