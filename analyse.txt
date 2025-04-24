@@ -22,7 +22,7 @@ Je vais analyser la recette "GâteauChocolat" pour vous donner une estimation de
 
 **Ingrédients et quantités**
 
-* Chocolat (200 g) : 1200 kcal, 80 g lipides, 120 g sucres, 12 g protéines
+* Chocolat (200 g) : 1200 kcal, 80 g lipides, 120 g sucres, 20 g protéines
 * Beurre (100 g) : 900 kcal, 100 g lipides, 0 g sucres, 0 g protéines
 * Œufs (3) : 180 kcal, 12 g lipides, 3 g sucres, 18 g protéines
 * Sucre (100 g) : 380 kcal, 0 g lipides, 100 g sucres, 0 g protéines
@@ -33,11 +33,11 @@ Je vais analyser la recette "GâteauChocolat" pour vous donner une estimation de
 * Calories : 2680 kcal
 * Lipides : 194 g
 * Sucres : 225 g
-* Protéines : 34 g
+* Protéines : 42 g
 
 **Analyse**
 
-La recette "GâteauChocolat" est très énergétique et riche en lipides et sucres. Les quantités de beurre et de sucre sont élevées, ce qui explique la forte teneur en calories et en sucres. Les œufs et la farine apportent des protéines et des fibres, mais ces éléments sont minoritaires par rapport aux autres ingrédients.
+La recette "GâteauChocolat" est très énergétique et riche en lipides et sucres. Les quantités de beurre et de sucre sont très élevées, ce qui explique les valeurs élevées en calories et en sucres. Les œufs et la farine apportent des protéines et des fibres, mais ces éléments sont minoritaires par rapport aux autres ingrédients.
 
 **Évaluation de la santé**
 
@@ -49,7 +49,7 @@ Pour améliorer la santé de cette recette, il est possible de faire quelques mo
 
 * Réduire la quantité de beurre et de sucre
 * Utiliser des ingrédients plus sains, tels que des huiles végétales et des sucres naturels
-* Ajouter des ingrédients additionnels, tels que des fruits, des noix ou des graines, pour apporter des fibres et des nutriments supplémentaires
-* Utiliser des œufs de qualité et des farines de blé entier pour apporter des protéines et des fibres
+* Ajouter des fruits, des noix ou des graines pour apporter des fibres et des protéines supplémentaires
+* Utiliser des œufs de qualité et des farines complètes pour maximiser les avantages nutritionnels
 
 En résumé, cette recette "GâteauChocolat" est trop énergétique et riche en lipides et sucres pour être considérée comme saine. Il est important de faire des modifications pour améliorer la santé de cette recette.
