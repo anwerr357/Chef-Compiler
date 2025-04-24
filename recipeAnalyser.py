@@ -3,7 +3,10 @@ import ollama
 from textwrap import fill
 import time
 import openai
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 def analyser_sante_recette(recette):
     ingredients = recette["ingrédients"]  
     prompt = f"""
@@ -14,8 +17,9 @@ Nom : {recette['nom']}
 Ingrédients : {', '.join(ingredients)}
 Étapes : {" ".join(recette['etapes'])}
 """
+    API_KEY = os.getenv("API_KEY")
     #together ai key 
-    openai.api_key = "835d5c870872c327445d7f2480ab7ef19a01513bf700d0e9eb1cda6f4608f95d"
+    openai.api_key = API_KEY
     openai.api_base = "https://api.together.xyz/v1"
     try:
         start = time.time()
